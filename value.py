@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Cal
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # --- КОНФІГУРАЦІЯ ---
-TOKEN = "takonn"
+TOKEN = os.getenv("takonn")
 MY_ID = 8200640747  # <--- Твій ID від @userinfobot !!!
 
 user_data = {}
